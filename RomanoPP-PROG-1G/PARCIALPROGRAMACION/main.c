@@ -41,7 +41,9 @@ int main()
 
     descuentoPrecio = descuento(precio);
 
-    printf("el precio final es %.2f\n",descuentoPrecio);
+    precio -= descuentoPrecio;
+
+    printf("el precio final es %.2f\n",precio);
 
     system("pause");
     system("cls");
@@ -151,7 +153,7 @@ void ordenamientoBurbuja(eNotebook notebooks[], int tam)
 float descuento(float precio)
 {
     float descuento = (precio*5)/100;
-    printf("descuento aplicado del %5");
+    printf("descuento aplicado del 5 porciento realizado con exito\n");
 
     return descuento;
 }
